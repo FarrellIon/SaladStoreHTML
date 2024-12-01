@@ -23,6 +23,17 @@
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
+<style>
+    .gallery-area .gallery-box .single-gallery .big-img{
+        height: 640px;
+    }
+    .gallery-area .gallery-box .single-gallery .smoll-img{
+        height: 320px;
+    }
+    .slider-height {
+        min-height: 800px !important;
+    }
+</style>
 <body>
     <!--? Preloader Start -->
     <div id="preloader-active">
@@ -45,7 +56,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2 col-md-1">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" style="max-width: 80px;"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10 col-md-10">
@@ -85,7 +96,7 @@
     </header>
     <main>
         <!--? slider Area Start-->
-        <div class="slider-area ">
+        <div class="slider-area">
             <div class="slider-active">
                 <!-- Single Slider -->
                 <div class="single-slider slider-height d-flex align-items-center">
@@ -93,12 +104,12 @@
                         <div class="row">
                             <div class="col-xl-9 col-lg-9 col-md-9">
                                 <div class="hero__caption">
-                                    <span data-animation="fadeInLeft" data-delay=".2s">Discover Your Teste</span>
-                                    <h1 data-animation="fadeInLeft" data-delay=".4s">We belive good food offer great smile</h1>
-                                    <p data-animation="fadeInLeft" data-delay=".6s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.</p>
+                                    <span data-animation="fadeInLeft" data-delay=".2s">Rasakan Keistimewaan Setiap Sajian</span>
+                                    <h1 data-animation="fadeInLeft" data-delay=".4s">Salad & Store</h1>
+                                    <p data-animation="fadeInLeft" data-delay=".6s">Kami menyajikan hidangan yang dirancang untuk memperkaya pengalaman makan Anda dengan cita rasa yang khas dan tekstur yang sempurna.</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn">
-                                        <a href="industries.html" class="btn hero-btn"  data-animation="fadeInLeft" data-delay=".8s">Resurvation</a>
+                                        <a href="industries.html" class="btn hero-btn"  data-animation="fadeInLeft" data-delay=".8s">Pelajari Lebih ></a>
                                     </div>
                                 </div>
                             </div>
@@ -193,30 +204,30 @@
         </div>
         <!-- About Area End -->
         <!--? gallery Products Start -->
-        <section class="gallery-area fix ">
+        <section class="gallery-area fix">
             <!-- Gallery Top Start -->
-            <div class="gallery-top section-bg pt-90 pb-40" data-background="assets/img/gallery/section_bg01.png">
+            <div class="gallery-top section-bg pt-90" data-background="assets/img/gallery/section_bg01.png">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="cl-xl-7 col-lg-8 col-md-10">
                             <!-- Section Tittle -->
                             <div class="section-tittle text-center mb-70">
-                                <span>Our Offerd Menu</span>
-                                <h2>Some Trendy And  Popular Courses Offerd</h2>
-                            </div> 
+                                <span>Menu Kami</span>
+                                <h2>Salad yang Kami Sediakan</h2>
+                            </div>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="properties__button">
-                            <!--Nav Button  -->
-                            <nav>                                                                         
+                            <!--Nav Button -->
+                            {{-- <nav>                                                                         
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Special</a>
                                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Lunch</a>
                                     <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"> Brakefirst </a>
                                     <a class="nav-item nav-link" id="nav-dinner-tab" data-toggle="tab" href="#nav-dinner" role="tab" aria-controls="nav-dinner" aria-selected="false"> Dinner </a>
                                 </div>
-                            </nav>
+                            </nav> --}}
                             <!--End Nav Button  -->
                         </div>
                     </div>
@@ -230,42 +241,29 @@
                     <!-- card one -->
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row no-gutters">
-                            <div class="col-lg-5 col-md-6 col-sm-6">
-                                <div class="gallery-box">
-                                    <div class="single-gallery">
-                                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery1.png);"></div>
-                                        <div class="g-caption">
-                                            <span>$25</span>
-                                            <h4>Delicious Food</h4>
-                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                            <a href="#" class="btn order-btn">Order Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="gallery-box">
                                     <div class="single-gallery">
-                                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+                                        <div class="gallery-img big-img" style="background-image: url(assets/img/salad-udang.jpg);"></div>
                                         <div class="g-caption">
-                                            <span>$25</span>
-                                            <h4>Delicious Food</h4>
-                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <span>18k - 36k</span>
+                                            <h4>Salad Roll Udang</h4>
+                                            <p>Salad roll yang berisi udang rebus yang segar dan gurih dengan sayuran segar.</p>
                                             <a href="#" class="btn order-btn">Order Now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-12">
+                            <div class="col-lg-4 col-md-12">
                                 <div class="row no-gutters">
                                     <div class="col-lg-12 col-md-6 col-sm-6">
                                         <div class="gallery-box">
                                             <div class="single-gallery">
-                                                <div class="gallery-img smoll-img" style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                                                <div class="gallery-img smoll-img" style="background-image: url(assets/img/salad-ayam.jpg); background-position: center center"></div>
                                                 <div class="g-caption">
-                                                    <span>$25</span>
-                                                    <h4>Delicious Food</h4>
-                                                    <p>Ut enim ad minim veniam quis nostr.</p>
+                                                    <span>15k - 36k</span>
+                                                    <h4>Salad Roll Ayam</h4>
+                                                    <p>Salad roll yang berisi daging ayam ditambah sayuran segar.</p>
                                                     <a href="#" class="btn order-btn">Order Now</a>
                                                 </div>
                                             </div>
@@ -276,9 +274,39 @@
                                             <div class="single-gallery">
                                                 <div class="gallery-img smoll-img" style="background-image: url(assets/img/gallery/gallery4.png);"></div>
                                                 <div class="g-caption">
-                                                    <span>$25</span>
-                                                    <h4>Delicious Food</h4>
-                                                    <p>Ut enim ad minim veniam quis nostr.</p>
+                                                    <span>15k - 30k</span>
+                                                    <h4>Salad Roll Tahu</h4>
+                                                    <p>Salad roll yang berisi tahu goreng yang lembut ditambah dengan sayuran segar.</p>
+                                                    <a href="#" class="btn order-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
+                                        <div class="gallery-box">
+                                            <div class="single-gallery">
+                                                <div class="gallery-img smoll-img" style="background-image: url(assets/img/salad-telur.jpg); background-position: center center"></div>
+                                                <div class="g-caption">
+                                                    <span>15k - 25k</span>
+                                                    <h4>Salad Roll Telur</h4>
+                                                    <p>Salad roll yang berisi telur yang lembut dengan sayuran segar.</p>
+                                                    <a href="#" class="btn order-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
+                                        <div class="gallery-box">
+                                            <div class="single-gallery">
+                                                <div class="gallery-img smoll-img" style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                                                <div class="g-caption">
+                                                    <span>15k - 30k</span>
+                                                    <h4>Salad Roll Buah</h4>
+                                                    <p>Salad roll yang berisi buah-buahan segar seperti pisang, apel, stroberi, kiwi, dan mangga, ditambah dengan selada dan daun mint.</p>
                                                     <a href="#" class="btn order-btn">Order Now</a>
                                                 </div>
                                             </div>
